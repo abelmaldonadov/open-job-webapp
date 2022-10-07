@@ -1,0 +1,33 @@
+.page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100vh, auto);
+}
+.navbar {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background: #f6f6f6;
+    border-right: 1px solid #e8e8e8;
+    padding: 10px;
+}
+.route {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+.activeRoute {
+    background: #4564f7;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.activeLink {
+    color: white;
+}
+.body {
+    grid-column: 4 / 13;
+    grid-row: 1;
+}
